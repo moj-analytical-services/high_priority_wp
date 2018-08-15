@@ -1,4 +1,5 @@
-FROM rocker/shiny@sha256:627a2b7b3b6b1f6e33d37bdba835bbbd854acf70d74010645af71fc3ff6c32b6
+FROM quay.io/mojanalytics/rshiny:latest
+# FROM rshiny432
 
 WORKDIR /srv/shiny-server
 
@@ -31,4 +32,6 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/
 
 # Run shiny-server on port 80
 RUN sed -i 's/3838/80/g' /etc/shiny-server/shiny-server.conf
-EXPOSE 80
+
+# docker run -p 8888:8001 ddd
+# EXPOSE 80
