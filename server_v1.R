@@ -10,9 +10,7 @@ library(s3tools)
 server <- function(input, output) {
   
   # ================================================================================
-  #
   # open the OPT csv file
-  #
   # ================================================================================
   
   # frmOPTData <- read.csv(file="/home/pythagoras77/high_priority_wp/www/DAMIT Helpdesk Calls 25_03_MS_DOS.csv", header=TRUE, sep=",")
